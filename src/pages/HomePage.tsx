@@ -68,7 +68,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             ].map((item, i) => (
               <div key={i} className="text-center group">
                 <div className="inline-flex items-center justify-center w-12 h-12 border border-gold/30 mb-6 group-hover:border-gold transition-colors">
-                  <Icon name={item.icon as any} size={20} className="text-gold" />
+                  <Icon name={item.icon as "Award"} size={20} className="text-gold" />
                 </div>
                 <h3 className="font-cormorant text-xl mb-3 text-foreground">{item.title}</h3>
                 <p className="font-montserrat text-xs text-muted-foreground leading-loose">{item.desc}</p>
